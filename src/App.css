@@ -120,3 +120,13 @@ body{
   gap: 3rem;
   flex-wrap: wrap;
 }
+
+.footer{
+  align-items: center;
+  text-align: center;
+}
+
+.footer-text{
+  font-family: var(--primary-font);
+  font-size: 2rem;
+}

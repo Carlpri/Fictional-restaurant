@@ -1,5 +1,5 @@
 import listingData from "../../data/listing-data";
-function ListingItem({image, title, description, price}) {
+function ListingItem({ image, title, description, price }) {
   return (
     <div className="listing-item">
       <div className="listing-img">
@@ -20,11 +20,16 @@ function ListingItem({image, title, description, price}) {
 function Listing() {
   return (
     <section className="listing-container">
-      {
-        listingData.map((listing) =>{
-            return <ListingItem image={listing.Image} title={listing.title} description={listing.description} price={listing.price}/>
-        })
-      }
+      {listingData.map((listing) => {
+        return (
+          <ListingItem
+            image={listing.Image}
+            title={listing.title}
+            description={listing.description}
+            price={listing.price}
+          />
+        );
+      })}
     </section>
   );
 }
