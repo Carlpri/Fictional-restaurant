@@ -1,9 +1,13 @@
 import listingData from "../../data/listing-data";
-function ListingItem({ image, title, description, price }) {
+function ListingItem({ image, title, description, price ,discount,rating}) {
   return (
     <div className="listing-item">
       <div className="listing-img">
         <img src={image} alt={title} />
+        <button className="discount-item"> {discount}</button>
+        <button className="rating-item" >
+          <span>⭐</span> <p> {rating}</p>
+        </button>
       </div>
 
       <div className="listing-details">
@@ -27,6 +31,8 @@ function Listing() {
             title={listing.title}
             description={listing.description}
             price={listing.price}
+            discount={listing.discount}
+            rating={listing.rating}
           />
         );
       })}

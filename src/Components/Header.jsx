@@ -1,7 +1,7 @@
 import { IoFastFoodOutline } from "react-icons/io5";
 // <IoFastFoodOutline /> (the all icon)
 
-import { BiDrink } from "react-icons/bi";
+import { BiColor, BiDrink } from "react-icons/bi";
 // <BiDrink /> (drinks icon)
 
 import { IoPizzaOutline } from "react-icons/io5";
@@ -21,7 +21,7 @@ function Header(){
   return(
         <header className="header">
             <ol className="head-nav-list">
-                <li className="header-nav-list-item"> <IoFastFoodOutline /> All</li>
+                <li style={{color:'#a00505'}} className="header-nav-list-item"> <IoFastFoodOutline /> All</li>
                 <li className="header-nav-list-item"> <BiDrink /> Drinks</li>
                 <li className="header-nav-list-item"> <IoPizzaOutline /> Pizza</li>
                 <li className="header-nav-list-item"> <LuSalad /> Salad</li>
